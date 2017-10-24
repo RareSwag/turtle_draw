@@ -50,7 +50,7 @@ def squigly():
         
         speed(10)
         for r in range(2):
-            for i in range(20):
+            for i in range(10):
                 lr = randint(0,1)
                 
                 if lr == 0:
@@ -106,19 +106,31 @@ def squigly():
         clear()
 
 def l():
-    left(.5)
+    color(0 ,0 ,0)
+    left(.3)
 
 def r():
-    right(.5)
+    color(0 ,0 ,0)
+    right(.3)
     
 def game():
-    la = True
-    while la == True:
-        forward(1)
+    for i in range(500):
+        backward(3)
         onkeyrelease(l, "a")
         onkeyrelease(r, "d")
         listen()
 
+def drawf():
+    circ = Turtle()
+    er = True
+    while er == True:
+        co = 0
+        screen.onclick(circ.goto)
+        circ.color(co, co, co)
+        circ.forward(10)
+        circ.left(50)
+        screnn.onclick(None)
+    
 def timer():
     time = 0
     while time != 300:
@@ -127,6 +139,7 @@ def timer():
     clear()
     
 while again == True:
+    '''
     triangle()
     timer()
     square()
@@ -135,5 +148,7 @@ while again == True:
     timer()
     game()
     timer()
+    '''
+    drawf()
 
 
