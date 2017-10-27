@@ -129,7 +129,7 @@ def drawf():
         circ.color(co, co, co)
         circ.forward(10)
         circ.left(50)
-        screnn.onclick(None)
+        screen.onclick(None)
     
 def timer():
     time = 0
@@ -139,7 +139,6 @@ def timer():
     clear()
     
 while again == True:
-    '''
     triangle()
     timer()
     square()
@@ -148,7 +147,6 @@ while again == True:
     timer()
     game()
     timer()
-    '''
-    drawf()
+
 
 
